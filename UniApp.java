@@ -1,25 +1,34 @@
-// import persons.Student;
-
 public class UniApp {
-    public static void main(String[] args){
-        //Student= class Student, neues Objekt erstellen vom Typ Objekt, constructor weiß durch new bescheid
-        Student svenja= new Student("svenja", "dunger");
-
+    public static void main(String[] args) {
+        // Student-
+        Student svenja = new Student("Svenja", "Dunger");
         svenja.kursBelegen("Prog1");
-        svenja.getVorname();
-        svenja.setVorname("test");
-        svenja.getAlter();
         svenja.setAlter(17);
-        System.out.println((svenja));
-        System.out.println(svenja.getAllData());
+
+        // Raum
+        Raum raum = new Raum("H101", 30);
+
+        // Dozent
+        Dozent martin = new Dozent("Martin", "GSE");
+        martin.setFachbereich("Prog-Tutorium");
+
         
-        // to print array
-        for(int i=0; i < svenja.belegteKurse.length; i++){
-            System.out.println(svenja.belegteKurse[i]);
+        System.out.println(svenja);
+        System.out.println(svenja.getAllData());
+
+        
+        for(int i = 0; i < svenja.belegteKurse.length; i++){
+            if (svenja.belegteKurse[i] != null) {
+                System.out.println(svenja.belegteKurse[i]);
+            }
         }
 
-        Dozent martin = new Dozent("martin", "GSE");
-        System.out.println(martin.getVorname());
-        martin.setFachbereich("Prog-Tutorium");
+        
+        System.out.println("Dozent Vorname: " + martin.getVorname());
+        // System.out.println("Neuer Fachbereich: " + martin.getFachbereich());
+
+        
+        System.out.println("Raum: " + raum.getRaumNummer());
     }
 }
+
