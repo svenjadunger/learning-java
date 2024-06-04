@@ -2,7 +2,7 @@ public class Dozent {
     private String name;
     private int age;
     private String fachbereich;
-    public String[] lessons = new String[10];
+    public String[] lessons = new String[10]; //hier ändern, Nicht 10
 
     // construktor
     public Dozent(String vorname, String fachbereich){ 

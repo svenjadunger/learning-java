@@ -1,7 +1,10 @@
+
+
 public class UniApp {
     public static void main(String[] args) {
         // Student-
-        Student svenja = new Student("Svenja", "Dunger");
+        Student svenja = new Student("Svenja", "Dunger ", 12345, " Informatik");
+
         svenja.kursBelegen("Prog1");
         svenja.setAlter(17);
 
@@ -17,11 +20,11 @@ public class UniApp {
         System.out.println(svenja.getAllData());
 
         
-        for(int i = 0; i < svenja.belegteKurse.length; i++){
-            if (svenja.belegteKurse[i] != null) {
-                System.out.println(svenja.belegteKurse[i]);
-            }
-        }
+        // for(int i = 0; i < svenja.belegteKurse.length; i++){
+        //     if (svenja.belegteKurse[i] != null) {
+        //         System.out.println(svenja.belegteKurse[i]);
+        //     }
+        // }
 
         
         System.out.println("Dozent Vorname: " + martin.getVorname());
