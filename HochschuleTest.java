@@ -8,6 +8,12 @@ public class HochschuleTest {
         System.out.println(tala);
         System.out.println(diana);
 
+
+        Veranstaltung rechnernetze = new Veranstaltung("Rechnernetze");
+      
+
+
+
         //Array von Student-Objekten
         Student[] studenten = new Student[6];
 
@@ -17,6 +23,9 @@ public class HochschuleTest {
         studenten[3] = new Student("John", "Doe", 12348, "Elektrotechnik");
         studenten[4] = new Student("Jane", "Smith", 12349, "Medizin");
         studenten[5] = new Student("Max", "Mustermann", 12350, "BWL");
+
+rechnernetze.belege(tala);
+rechnernetze.belege(diana);
 
         //alle student-objekte ausgeben
 
