@@ -33,5 +33,14 @@ public class UniApp {
         
         System.out.println("Raum: " + raum.getRaumNummer());
     }
+
+    // Dozenz profWider = new Dozent("Arif Wieder","GSE");
+    //     profWider.printAllData();
+    //    System.out.println(profWider.telefonNummmer);
+    //    System.out.println(Dozent.anzahlDozenten);
+    //     Dozent profMajuntke = new Dozent("Verena Majuntke", "Prog");
+    //     profMajuntke.printAllData();
+    //     System.out.println(Dozent.anzahlDozenten);
+    
 }
 
